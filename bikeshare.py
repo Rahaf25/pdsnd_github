@@ -22,7 +22,7 @@ def get_filters():
 
     while True:
       city = input("\nWhat city would you like? New York City, Chicago or Washington?\n")
-      if city.lower() in ('New York City', 'Chicago', 'Washington'):
+      if city in ('New York City', 'Chicago', 'Washington'):
          
         break
       else:
