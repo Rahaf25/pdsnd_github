@@ -22,12 +22,11 @@ def get_filters():
 
     while True:
       city = input("\nWhat city would you like? New York City, Chicago or Washington?\n")
-      if city in ('New York City', 'Chicago', 'Washington'):
-         
-        break
-      else:
-        print("Sorry, your input should be: chicago new york city or washington")
+      if city  not in ('New York City', 'Chicago', 'Washington'): 
+      	print("Sorry, your input should be: chicago new york city or washington")
         continue
+      else:
+        break
 
     # TO DO: get user input for month (all, january, february, ... , june)
 
